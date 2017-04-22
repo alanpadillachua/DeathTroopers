@@ -10,7 +10,6 @@ config = {
     'database': 'grss',
     'raise_on_warnings': True,
 }
-
 connector = mysql.connector.connect(**config)
 
 cursor = connector.cursor()
