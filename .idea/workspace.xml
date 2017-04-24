@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92885151-6398-4cd9-9311-88f8f5aa756e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DeathTroopers.py" afterPath="$PROJECT_DIR$/DeathTroopers.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/DeathTroopers$DeathTroopers.coverage" NAME="DeathTroopers Coverage Results" MODIFIED="1492994304878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeathTroopers$DeathTroopers.coverage" NAME="DeathTroopers Coverage Results" MODIFIED="1493068679612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DeathTroopers$sampleCode.coverage" NAME="sampleCode Coverage Results" MODIFIED="1492924741077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -33,28 +34,39 @@
       <file leaf-file-name="DeathTroopers.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DeathTroopers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="668">
-              <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+            <state relative-caret-position="644">
+              <caret line="150" column="2" lean-forward="false" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
               <folding>
-                <element signature="e#435#676#0" expanded="false" />
-                <element signature="e#703#962#0" expanded="false" />
-                <element signature="e#1726#2046#0" expanded="false" />
-                <marker date="1492994304840" expanded="true" signature="451:579" ph="INSERT INTO Republic_Station... " />
-                <marker date="1492994304840" expanded="true" signature="729:824" ph="INSERT INTO rooms... " />
-                <marker date="1492994304840" expanded="true" signature="1031:1056" ph="INSERT INTO training_room... " />
-                <marker date="1492994304840" expanded="true" signature="1031:1120" ph="INSERT INTO training_room... " />
-                <marker date="1492994304840" expanded="true" signature="1031:1168" ph="INSERT INTO training_room... " />
-                <marker date="1492994304840" expanded="false" signature="1351:1689" ph="..." />
-                <marker date="1492994304840" expanded="true" signature="1391:1538" ph="INSERT INTO briefing_room... " />
-                <marker date="1492994304840" expanded="true" signature="1750:1762" ph="INSERT INTO Republic_Station... " />
-                <marker date="1492994304840" expanded="true" signature="1750:1879" ph="INSERT INTO Republic_Station... " />
-                <marker date="1492994304840" expanded="true" signature="1750:1932" ph="INSERT INTO Republic_Station... " />
-                <marker date="1492994304840" expanded="true" signature="2113:2137" ph="INSERT INTO landing_dock... " />
-                <marker date="1492994304840" expanded="true" signature="2113:2214" ph="INSERT INTO landing_dock... " />
-                <marker date="1492994304840" expanded="true" signature="2113:2261" ph="INSERT INTO landing_dock... " />
-                <marker date="1492994304840" expanded="true" signature="2566:2580" ph="SELECT * FRO... bri" />
-                <marker date="1492994304840" expanded="true" signature="2566:2588" ph="SELECT * FRO... landing_station" />
-                <marker date="1492994304840" expanded="true" signature="2566:2592" ph="SELECT * FRO... landing_dock" />
+                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#451#692#0" expanded="false" />
+                <element signature="e#719#978#0" expanded="false" />
+                <element signature="e#1013#1337#0" expanded="false" />
+                <element signature="e#1742#2062#0" expanded="false" />
+                <element signature="e#2096#2429#0" expanded="false" />
+                <element signature="e#2458#3659#0" expanded="false" />
+                <element signature="e#2583#2770#0" expanded="false" />
+                <element signature="e#3685#5025#0" expanded="false" />
+                <marker date="1493068679555" expanded="true" signature="467:595" ph="INSERT INTO Republic_Station... " />
+                <marker date="1493068679555" expanded="true" signature="745:840" ph="INSERT INTO rooms... " />
+                <marker date="1493068679555" expanded="true" signature="1047:1072" ph="INSERT INTO training_room... " />
+                <marker date="1493068679555" expanded="true" signature="1047:1136" ph="INSERT INTO training_room... " />
+                <marker date="1493068679555" expanded="true" signature="1047:1184" ph="INSERT INTO training_room... " />
+                <marker date="1493068679555" expanded="false" signature="1367:1705" ph="..." />
+                <marker date="1493068679555" expanded="true" signature="1407:1554" ph="INSERT INTO briefing_room... " />
+                <marker date="1493068679555" expanded="true" signature="1766:1778" ph="INSERT INTO Republic_Station... " />
+                <marker date="1493068679555" expanded="true" signature="1766:1895" ph="INSERT INTO Republic_Station... " />
+                <marker date="1493068679555" expanded="true" signature="1766:1948" ph="INSERT INTO Republic_Station... " />
+                <marker date="1493068679555" expanded="true" signature="2129:2153" ph="INSERT INTO landing_dock... " />
+                <marker date="1493068679555" expanded="true" signature="2129:2230" ph="INSERT INTO landing_dock... " />
+                <marker date="1493068679555" expanded="true" signature="2129:2277" ph="INSERT INTO landing_dock... " />
+                <marker date="1493068679555" expanded="true" signature="3110:3129" ph="INSERT INTO mission... " />
+                <marker date="1493068679555" expanded="true" signature="3110:3241" ph="INSERT INTO mission... " />
+                <marker date="1493068679555" expanded="true" signature="3110:3294" ph="INSERT INTO mission... " />
+                <marker date="1493068679555" expanded="true" signature="4346:4370" ph="INSERT INTO jedi_general... " />
+                <marker date="1493068679555" expanded="true" signature="4346:4474" ph="INSERT INTO jedi_general... " />
+                <marker date="1493068679555" expanded="true" signature="4346:4522" ph="INSERT INTO jedi_general... " />
+                <marker date="1493068679555" expanded="true" signature="5214:5228" ph="SELECT * FRO... mission" />
+                <marker date="1493068679555" expanded="true" signature="5214:5240" ph="SELECT * FRO... jedi_general" />
               </folding>
             </state>
           </provider>
@@ -354,12 +366,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33529413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36764705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -398,25 +410,36 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#435#676#0" expanded="false" />
-            <element signature="e#703#962#0" expanded="false" />
-            <element signature="e#1726#2046#0" expanded="false" />
-            <marker date="1492994304840" expanded="true" signature="451:579" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="729:824" ph="INSERT INTO rooms... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1056" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1120" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1168" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="false" signature="1351:1689" ph="..." />
-            <marker date="1492994304840" expanded="true" signature="1391:1538" ph="INSERT INTO briefing_room... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1762" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1879" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1932" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2137" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2214" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2261" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2566:2580" ph="SELECT * FRO... bri" />
-            <marker date="1492994304840" expanded="true" signature="2566:2588" ph="SELECT * FRO... landing_station" />
-            <marker date="1492994304840" expanded="true" signature="2566:2592" ph="SELECT * FRO... landing_dock" />
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#451#692#0" expanded="false" />
+            <element signature="e#719#978#0" expanded="false" />
+            <element signature="e#1013#1337#0" expanded="false" />
+            <element signature="e#1742#2062#0" expanded="false" />
+            <element signature="e#2096#2429#0" expanded="false" />
+            <element signature="e#2458#3659#0" expanded="false" />
+            <element signature="e#2583#2770#0" expanded="false" />
+            <element signature="e#3685#5025#0" expanded="false" />
+            <marker date="1493068679555" expanded="true" signature="467:595" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="745:840" ph="INSERT INTO rooms... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1072" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1136" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1184" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="false" signature="1367:1705" ph="..." />
+            <marker date="1493068679555" expanded="true" signature="1407:1554" ph="INSERT INTO briefing_room... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1778" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1895" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1948" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2153" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2230" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2277" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3129" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3241" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3294" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4370" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4474" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4522" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="5214:5228" ph="SELECT * FRO... mission" />
+            <marker date="1493068679555" expanded="true" signature="5214:5240" ph="SELECT * FRO... jedi_general" />
           </folding>
         </state>
       </provider>
@@ -434,25 +457,36 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#435#676#0" expanded="false" />
-            <element signature="e#703#962#0" expanded="false" />
-            <element signature="e#1726#2046#0" expanded="false" />
-            <marker date="1492994304840" expanded="true" signature="451:579" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="729:824" ph="INSERT INTO rooms... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1056" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1120" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1168" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="false" signature="1351:1689" ph="..." />
-            <marker date="1492994304840" expanded="true" signature="1391:1538" ph="INSERT INTO briefing_room... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1762" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1879" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1932" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2137" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2214" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2261" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2566:2580" ph="SELECT * FRO... bri" />
-            <marker date="1492994304840" expanded="true" signature="2566:2588" ph="SELECT * FRO... landing_station" />
-            <marker date="1492994304840" expanded="true" signature="2566:2592" ph="SELECT * FRO... landing_dock" />
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#451#692#0" expanded="false" />
+            <element signature="e#719#978#0" expanded="false" />
+            <element signature="e#1013#1337#0" expanded="false" />
+            <element signature="e#1742#2062#0" expanded="false" />
+            <element signature="e#2096#2429#0" expanded="false" />
+            <element signature="e#2458#3659#0" expanded="false" />
+            <element signature="e#2583#2770#0" expanded="false" />
+            <element signature="e#3685#5025#0" expanded="false" />
+            <marker date="1493068679555" expanded="true" signature="467:595" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="745:840" ph="INSERT INTO rooms... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1072" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1136" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1184" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="false" signature="1367:1705" ph="..." />
+            <marker date="1493068679555" expanded="true" signature="1407:1554" ph="INSERT INTO briefing_room... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1778" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1895" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1948" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2153" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2230" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2277" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3129" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3241" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3294" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4370" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4474" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4522" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="5214:5228" ph="SELECT * FRO... mission" />
+            <marker date="1493068679555" expanded="true" signature="5214:5240" ph="SELECT * FRO... jedi_general" />
           </folding>
         </state>
       </provider>
@@ -467,28 +501,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DeathTroopers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="90" column="21" lean-forward="false" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+        <state relative-caret-position="644">
+          <caret line="150" column="2" lean-forward="false" selection-start-line="150" selection-start-column="2" selection-end-line="150" selection-end-column="2" />
           <folding>
-            <element signature="e#435#676#0" expanded="false" />
-            <element signature="e#703#962#0" expanded="false" />
-            <element signature="e#1726#2046#0" expanded="false" />
-            <marker date="1492994304840" expanded="true" signature="451:579" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="729:824" ph="INSERT INTO rooms... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1056" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1120" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="true" signature="1031:1168" ph="INSERT INTO training_room... " />
-            <marker date="1492994304840" expanded="false" signature="1351:1689" ph="..." />
-            <marker date="1492994304840" expanded="true" signature="1391:1538" ph="INSERT INTO briefing_room... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1762" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1879" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="1750:1932" ph="INSERT INTO Republic_Station... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2137" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2214" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2113:2261" ph="INSERT INTO landing_dock... " />
-            <marker date="1492994304840" expanded="true" signature="2566:2580" ph="SELECT * FRO... bri" />
-            <marker date="1492994304840" expanded="true" signature="2566:2588" ph="SELECT * FRO... landing_station" />
-            <marker date="1492994304840" expanded="true" signature="2566:2592" ph="SELECT * FRO... landing_dock" />
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#451#692#0" expanded="false" />
+            <element signature="e#719#978#0" expanded="false" />
+            <element signature="e#1013#1337#0" expanded="false" />
+            <element signature="e#1742#2062#0" expanded="false" />
+            <element signature="e#2096#2429#0" expanded="false" />
+            <element signature="e#2458#3659#0" expanded="false" />
+            <element signature="e#2583#2770#0" expanded="false" />
+            <element signature="e#3685#5025#0" expanded="false" />
+            <marker date="1493068679555" expanded="true" signature="467:595" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="745:840" ph="INSERT INTO rooms... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1072" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1136" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="true" signature="1047:1184" ph="INSERT INTO training_room... " />
+            <marker date="1493068679555" expanded="false" signature="1367:1705" ph="..." />
+            <marker date="1493068679555" expanded="true" signature="1407:1554" ph="INSERT INTO briefing_room... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1778" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1895" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="1766:1948" ph="INSERT INTO Republic_Station... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2153" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2230" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="2129:2277" ph="INSERT INTO landing_dock... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3129" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3241" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="3110:3294" ph="INSERT INTO mission... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4370" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4474" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="4346:4522" ph="INSERT INTO jedi_general... " />
+            <marker date="1493068679555" expanded="true" signature="5214:5228" ph="SELECT * FRO... mission" />
+            <marker date="1493068679555" expanded="true" signature="5214:5240" ph="SELECT * FRO... jedi_general" />
           </folding>
         </state>
       </provider>
