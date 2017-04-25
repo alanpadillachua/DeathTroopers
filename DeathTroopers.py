@@ -1,8 +1,7 @@
 import mysql.connector
 import random
-import re
 
-# print("Death Troopers")
+print("Death Troopers")
 
 config = {
     'user': 'root',
@@ -352,24 +351,68 @@ def pop_must_brief():
         cursor.execute(update_room)
         connector.commit()
 
+def pop_must_train():
+    get_callsign_jedi = 'SELECT JCall_Sign FROM jedi_general'
+    cursor.execute(get_callsign_jedi)
+    jedi_callsign_list = list(cursor.fetchall())
 
-# insert_station()
-# insert_rooms()
-# insert_training_room()
-# insert_briefing_room()
-# insert_landing_station()
-# insert_landing_dock()
-# insert_mission()
-# insert_jedi()
-# insert_spaceship()
-# pop_must_dock()
-# pop_must_pay_fee()
-# insert_mission_package()
-# insert_co_pilot()
-# insert_droid()
-# insert_clonetroopers()
-# pop_must_brief()
-# cursor.execute("SELECT * FROM briefing_room")
+    get_missionid_jedi = 'SELECT M_id FROM jedi_general'
+    cursor.execute(get_missionid_jedi)
+    jedi_mid_list = list(cursor.fetchall())
+
+    mpid_list = []
+    for i in range(0, len(jedi_mid_list)):
+        get_mpid = 'SELECT MP_id FROM mission_package WHERE M_id = ' + '%s' % jedi_mid_list[i]
+        cursor.execute(get_mpid)
+        mpid_list.extend(cursor.fetchone())
+    copilot_list = []
+    clonetrooper_list = []
+    for i in range(0, len(mpid_list)):
+        get_copilot = 'SELECT Co_ID FROM co_pilot WHERE MP_ID = ' + '%s' % mpid_list[i]
+        cursor.execute(get_copilot)
+        copilot_list.extend(cursor.fetchone())
+        get_clonetrooper = 'SELECT CCall_Sign FROM clonetrooper_unit WHERE MP_id = ' + '%s' % mpid_list[i]
+        cursor.execute(get_clonetrooper)
+        clonetrooper_list.extend(cursor.fetchone())
+    get_empty_training_room = 'SELECT RmNumber FROM training_room WHERE Available = 1 LIMIT ' + '%s' % str(
+        len(mpid_list))
+    cursor.execute(get_empty_training_room)
+    training_room_list = list(cursor.fetchall())
+
+    add_must_train = ('INSERT INTO must_train'
+                      '(JCall_Sign, Co_ID, CCall_Sign, Room_Number)'
+                      'VALUES (%s,%s,%s,%s)')
+    for i in range(0, len(mpid_list)):
+        data_must_train = ('%s' % jedi_callsign_list[i],
+                           '%s' % copilot_list[i],
+                           '%s' % clonetrooper_list[i],
+                           '%s' % training_room_list[i])
+        do_query(add_must_train, data_must_train)
+
+    for i in range(0, len(training_room_list)):
+        update_room = 'UPDATE training_room SET Available = 0 WHERE RmNumber = ' + '%s' % training_room_list[i]
+        cursor.execute(update_room)
+        connector.commit()
+
+insert_station()
+insert_rooms()
+insert_training_room()
+insert_briefing_room()
+insert_landing_station()
+insert_landing_dock()
+insert_mission()
+insert_jedi()
+insert_spaceship()
+pop_must_dock()
+pop_must_pay_fee()
+insert_mission_package()
+insert_co_pilot()
+insert_droid()
+insert_clonetroopers()
+pop_must_brief()
+pop_must_train()
+
+# cursor.execute("SELECT * FROM training_room")
 # for row in cursor.fetchall():
 #     print(row)
 
