@@ -304,6 +304,55 @@ def insert_clonetroopers():
                            '2223-04-24 12:12:00')
         do_query(add_clonetroop, data_clonetroop)
 
+
+def pop_must_brief():
+    get_callsign_jedi = 'SELECT JCall_Sign FROM jedi_general'
+    cursor.execute(get_callsign_jedi)
+    jedi_callsign_list = list(cursor.fetchall())
+
+    get_missionid_jedi = 'SELECT M_id FROM jedi_general'
+    cursor.execute(get_missionid_jedi)
+    jedi_mid_list = list(cursor.fetchall())
+
+    mpid_list = []
+    for i in range(0, len(jedi_mid_list)):
+        get_mpid = 'SELECT MP_id FROM mission_package WHERE M_id = ' + '%s' % jedi_mid_list[i]
+        cursor.execute(get_mpid)
+        mpid_list.extend(cursor.fetchone())
+    copilot_list = []
+    droid_list = []
+    clonetrooper_list = []
+    for i in range(0, len(mpid_list)):
+        get_copilot = 'SELECT Co_ID FROM co_pilot WHERE MP_ID = ' + '%s' % mpid_list[i]
+        cursor.execute(get_copilot)
+        copilot_list.extend(cursor.fetchone())
+        get_droid = 'SELECT Dname FROM droid WHERE MP_id = ' + '%s' % mpid_list[i]
+        cursor.execute(get_droid)
+        droid_list.extend(cursor.fetchone())
+        get_clonetrooper = 'SELECT CCall_Sign FROM clonetrooper_unit WHERE MP_id = ' + '%s' % mpid_list[i]
+        cursor.execute(get_clonetrooper)
+        clonetrooper_list.extend(cursor.fetchone())
+    get_empty_breif_room = 'SELECT Room_Number FROM briefing_room WHERE Availability = 1 LIMIT ' + '%s' % str(len(mpid_list))
+    cursor.execute(get_empty_breif_room)
+    briefing_room_list = list(cursor.fetchall())
+
+    add_must_brief = ('INSERT INTO must_brief'
+                      '(JCall_Sign, DName, Co_ID, CCall_Sign, Room_Number)'
+                      'VALUES (%s,%s,%s,%s,%s)')
+    for i in range(0, len(mpid_list)):
+        data_must_brief = ('%s' % jedi_callsign_list[i],
+                           '%s' % droid_list[i],
+                           '%s' % copilot_list[i],
+                           '%s' % clonetrooper_list[i],
+                           '%s' % briefing_room_list[i])
+        do_query(add_must_brief, data_must_brief)
+
+    for i in range(0, len(briefing_room_list)):
+        update_room = 'UPDATE Briefing_Room SET Availability = 0 WHERE Room_Number = ' + '%s' % briefing_room_list[i]
+        cursor.execute(update_room)
+        connector.commit()
+
+
 # insert_station()
 # insert_rooms()
 # insert_training_room()
@@ -318,9 +367,11 @@ def insert_clonetroopers():
 # insert_mission_package()
 # insert_co_pilot()
 # insert_droid()
-insert_clonetroopers()
-cursor.execute("SELECT * FROM clonetrooper_unit")
-for row in cursor.fetchall():
-    print(row)
+# insert_clonetroopers()
+# pop_must_brief()
+# cursor.execute("SELECT * FROM briefing_room")
+# for row in cursor.fetchall():
+#     print(row)
+
 
 connector.close()
