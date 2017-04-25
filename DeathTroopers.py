@@ -265,7 +265,7 @@ def insert_droid():
     add_droid = ('INSERT INTO droid'
                  '(Dname, MP_id, Dtype, DHP, DSpecialty, DDate_Time_Available)'
                  'VALUES (%s,%s,%s,%s,%s,%s)')
-    for i in range(0,len(droid_name_list)):
+    for i in range(0, len(droid_name_list)):
         data_droid = ('%s' % droid_name_clean_list[i],
                       '%s' % mpid_list[i],
                       '%s' % droid_roles_clean_list[i],
@@ -273,6 +273,36 @@ def insert_droid():
                       '%s' % droid_specialty_clean_list[i],
                       '2223-04-24 12:12:00')
         do_query(add_droid, data_droid)
+
+
+def insert_clonetroopers():
+    get_mp_id = 'SELECT MP_id FROM mission_package'
+    cursor.execute(get_mp_id)
+    mpid_list = list(cursor.fetchall())
+
+    clone_callsigns_file = 'CloneCallsigns.txt'
+    clone_names_file = 'CloneNames.txt'
+    clone_role_file = 'CloneRoles.txt'
+
+    with open(clone_callsigns_file) as file:
+        callsign_list = file.readlines()
+        callsign_clean_list = [x.strip() for x in callsign_list]
+    with open(clone_names_file) as file:
+        names_list = file.readlines()
+        names_clean_list = [x.strip() for x in names_list]
+    with open(clone_role_file) as file:
+        role_list = file.readlines()
+        role_clean_list = [x.strip() for x in role_list]
+    add_clonetroop = ('INSERT INTO clonetrooper_unit'
+                      '(CCall_Sign, MP_id, CName, CSpecialty, CDate_Time_Available)'
+                      'VALUES (%s,%s,%s,%s,%s)')
+    for i in range(0, len(callsign_list)):
+        data_clonetroop = ('%s' % callsign_clean_list[i],
+                           '%s' % mpid_list[i],
+                           '%s' % names_clean_list[i],
+                           '%s' % role_clean_list[i],
+                           '2223-04-24 12:12:00')
+        do_query(add_clonetroop, data_clonetroop)
 
 # insert_station()
 # insert_rooms()
@@ -288,7 +318,8 @@ def insert_droid():
 # insert_mission_package()
 # insert_co_pilot()
 # insert_droid()
-cursor.execute("SELECT * FROM co_pilot")
+insert_clonetroopers()
+cursor.execute("SELECT * FROM clonetrooper_unit")
 for row in cursor.fetchall():
     print(row)
 
