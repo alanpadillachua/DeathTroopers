@@ -205,6 +205,22 @@ def pop_must_pay_fee():
         do_query(add_must_pay_fee, must_pay_data)
 
 
+def insert_mission_package():
+    get_mission_id = 'SELECT MID_number FROM mission'
+    cursor.execute(get_mission_id)
+    mission_id_list = list(cursor.fetchall())
+
+    add_mission_package = ('INSERT INTO mission_package'
+                           '(M_id, MP_id, Fuel_Amount, Max_Credits) '
+                           'VALUES (%s,%s,%s,%s)')
+    mp_id = 1
+    for item in mission_id_list:
+        package_data = ('%s' % item[0],
+                        '%s' % str(mp_id),
+                        '5000', '7000')
+        do_query(add_mission_package, package_data)
+        mp_id += 1
+
 
 # insert_station()
 # insert_rooms()
@@ -217,8 +233,9 @@ def pop_must_pay_fee():
 # insert_spaceship()
 # pop_must_dock()
 # pop_must_pay_fee()
-cursor.execute("SELECT * FROM must_pay_fee")
-for row in cursor.fetchall():
-    print(row)
+# insert_mission_package()
+# cursor.execute("SELECT * FROM mission_package")
+# for row in cursor.fetchall():
+#     print(row)
 
 connector.close()

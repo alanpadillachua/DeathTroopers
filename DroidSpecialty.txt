@@ -1,0 +1,25 @@
+weapon repair
+ship repair
+weapon repair
+weapon repair
+ship repair
+ship trading
+cargo trading
+ship trading
+weapon trading
+cargo trading
+human medic
+wookie medic
+jawa medic
+human medic
+peace
+deception 
+peace
+deception
+cyber security
+ship security
+cyber security
+ship security
+cargo security
+bomb creation
+poison creation
